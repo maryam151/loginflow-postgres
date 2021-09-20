@@ -2,6 +2,10 @@ const express = require('express');
 const app = express();
 
 require('./startup/routes')(app);
+<<<<<<< HEAD
+=======
+require('./startup/config')();
+>>>>>>> cf784656b39749252186ec27165ffd49c76a2057
 const db = require('./models/index');
 
 async function dbConnnect() {
