@@ -21,13 +21,14 @@ router.post('/', validate(validateAuth), async (req, res) => {
     res.send({jwtToken: token, refreshToken: refreshToken});
 });
 
+
 router.post('/refresh-token', async (req, res) => {   
 
   try {
     const refreshToken = req.header('x-refresh-token');
     if(!refreshToken) return res.status(401).send('No token provided.');
 
-    const payload = jwt.verify(refreshToken, config.get('jwtRefreshKey'));
+    const payload = jwt.verify(refreshToken, "Saleh");
     const token = generateAuthToken(payload.id);
     res.send({jwtToken: token});
   } 

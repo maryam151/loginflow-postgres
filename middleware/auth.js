@@ -6,7 +6,7 @@ module.exports = function (req, res, next){
     if(!token) return res.status(401).send('No token provided.');
 
     try {
-        const decoded = jwt.verify(token, config.get('jwtPrivateKey'));
+        const decoded = jwt.verify(token, "Maryam");
         req.user = decoded;
         next();
     } 
