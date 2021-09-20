@@ -1,37 +1,23 @@
 {
   "development": {
     "username": "postgres",
-<<<<<<< HEAD
     "password": "mathematician",
     "database": "postgres",
-=======
-    "password": "atd",
-    "database": "login-flow",
->>>>>>> cf784656b39749252186ec27165ffd49c76a2057
     "host": "127.0.0.1",
     "port": 5432,
     "dialect": "postgres"
   },
   "test": {
     "username": "postgres",
-<<<<<<< HEAD
     "password": "mathematician",
     "database": "postgres",
-=======
-    "password": "atd",
-    "database": "seq-test",
->>>>>>> cf784656b39749252186ec27165ffd49c76a2057
     "host": "127.0.0.1",
     "port": 5432,
     "dialect": "postgres"
   },
   "production": {
     "username": "postgres",
-<<<<<<< HEAD
     "password": "mathematician",
-=======
-    "password": "atd",
->>>>>>> cf784656b39749252186ec27165ffd49c76a2057
     "database": "seq-prod",
     "host": "127.0.0.1",
     "port": 5432,
